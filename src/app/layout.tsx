@@ -1,4 +1,4 @@
-import Navbar from "./Navbar/Navbar";
+// src/app/layout.tsx
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +9,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar/>
         {children}
       </body>
     </html>
