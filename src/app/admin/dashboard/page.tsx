@@ -1,5 +1,5 @@
 // src/app/admin/dashboard/page.tsx
-export default function AdminDashboard() {
+export function AdminDashboard() {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -33,4 +33,9 @@ export default function AdminDashboard() {
       </div>
     </div>
   );
+}
+
+import { redirect } from 'next/navigation';
+export default async function AdminPage() {
+  redirect('/admin/dashboard');
 }
