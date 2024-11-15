@@ -1,5 +1,5 @@
 // src/app/admin/layout.tsx
-import AdminNavbar from '../components/AdminNavbar';
+import AdminNavbar from '../../components/AdminNavbar';
 import Link from 'next/link';
 
 export default function AdminLayout({

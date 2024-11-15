@@ -1,15 +1,17 @@
-// src/app/(main)/layout.tsx
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../components/Navbar";
 
-export default function MainLayout({
+
+export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <>
-      <Navbar />
-      {children}
-    </>
+    <html lang="en">
+      <body>
+        <Navbar/>
+        {children}
+      </body>
+    </html>
   );
 }
